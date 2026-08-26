@@ -85,7 +85,13 @@
 
 <style>
   html { scroll-behavior: smooth; }
-  body { background-color: #020617; }
+  body {
+    background-color: #020617;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+  h1, h2, h3 { text-wrap: balance; }
+  p { text-wrap: pretty; }
   .text-gradient-gold {
     background: linear-gradient(90deg, #f5c451 0%, #eab308 45%, #f59e0b 100%);
     -webkit-background-clip: text;
