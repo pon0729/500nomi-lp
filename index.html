@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>渋谷の夜、500人が熱狂する月1の特別な空間へ。| 完全紹介制ナイト</title>
+<meta name="description" content="毎月200〜500名が集う都内最大級の完全紹介制エンタメ交流ナイト。豪華お笑いライブ×飲み放題×最高の出会い。">
+
+<!-- OGP (LINE / Facebook等でシェアされた際の表示) -->
+<!-- ▼公開後、下記2つのURLは実際に公開したドメインに書き換えてください -->
+<meta property="og:url" content="https://your-domain.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SHIBUYA INVITE NIGHT">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="渋谷の夜、500人が熱狂する月1の特別な空間へ。| 完全紹介制ナイト">
+<meta property="og:description" content="豪華お笑いライブ×飲み放題×最高の出会い。信頼できる繋がりだけで広がる、都内最大級の完全紹介制エンタメ交流ナイト。">
+<meta property="og:image" content="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1200&h=630&fit=crop&auto=format">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter(X) Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="渋谷の夜、500人が熱狂する月1の特別な空間へ。| 完全紹介制ナイト">
+<meta name="twitter:description" content="豪華お笑いライブ×飲み放題×最高の出会い。信頼できる繋がりだけで広がる、都内最大級の完全紹介制エンタメ交流ナイト。">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1200&h=630&fit=crop&auto=format">
+
+<!-- Favicon / Theme Color -->
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f172a'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='%23eab308'%3E%F0%9F%8D%BE%3C/text%3E%3C/svg%3E">
+
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          base: {
+            950: '#020617',
+            900: '#0f172a',
+            800: '#1e293b',
+          },
+          gold: {
+            400: '#f5c451',
+            500: '#eab308',
+            600: '#f59e0b',
+          },
+          neon: {
+            cyan: '#38bdf8',
+          }
+        },
+        fontFamily: {
+          sans: ['"Noto Sans JP"', 'sans-serif'],
+          display: ['"Poppins"', '"Noto Sans JP"', 'sans-serif'],
+        },
+        boxShadow: {
+          'gold-glow': '0 0 40px -5px rgba(234,179,8,0.4)',
+          'cyan-glow': '0 0 40px -5px rgba(56,189,248,0.35)',
+        },
+        keyframes: {
+          floaty: {
+            '0%, 100%': { transform: 'translateY(0px)' },
+            '50%': { transform: 'translateY(-12px)' },
+          },
+          pulseSlow: {
+            '0%, 100%': { opacity: 1 },
+            '50%': { opacity: 0.6 },
+          }
+        },
+        animation: {
+          floaty: 'floaty 5s ease-in-out infinite',
+          pulseSlow: 'pulseSlow 2.5s ease-in-out infinite',
+        }
+      }
+    }
+  }
+</script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { background-color: #020617; }
+  .text-gradient-gold {
+    background: linear-gradient(90deg, #f5c451 0%, #eab308 45%, #f59e0b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-gradient-cyan {
+    background: linear-gradient(90deg, #38bdf8 0%, #7dd3fc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .bg-noise {
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.04) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+  }
+  .accordion-item.open .accordion-content {
+    max-height: 400px;
+  }
+  .accordion-item.open .accordion-icon {
+    transform: rotate(45deg);
+  }
+  .accordion-icon {
+    transition: transform 0.3s ease;
+  }
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease both;
+  }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  #cta-modal {
+    transition: opacity 0.25s ease;
+  }
+</style>
+</head>
+<body class="bg-base-950 text-slate-100 font-sans antialiased selection:bg-gold-500 selection:text-base-950">
+
+<!-- ========================= 1. HERO / FV ========================= -->
+<header class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2000&auto=format&fit=crop"
+         alt="渋谷の夜景と熱狂するパーティー会場"
+         class="w-full h-full object-cover opacity-60">
+    <div class="absolute inset-0 bg-gradient-to-b from-base-950/80 via-base-950/70 to-base-950"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-base-950 via-transparent to-base-950/40"></div>
+  </div>
+
+  <!-- Ambient glow blobs -->
+  <div class="absolute top-1/4 -left-20 w-72 h-72 bg-gold-500/20 rounded-full blur-[100px] animate-pulseSlow"></div>
+  <div class="absolute bottom-1/4 -right-20 w-72 h-72 bg-neon-cyan/20 rounded-full blur-[100px] animate-pulseSlow"></div>
+
+  <div class="relative z-10 max-w-5xl mx-auto px-6 py-32 text-center">
+    <!-- Badge -->
+    <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-gold-500/40 bg-gold-500/10 backdrop-blur-sm text-gold-400 text-xs sm:text-sm font-bold tracking-widest mb-8 shadow-gold-glow animate-floaty">
+      <i class="fa-solid fa-lock"></i>
+      <span>INVITED GUESTS ONLY | 完全紹介制</span>
+    </div>
+
+    <!-- Main Catch -->
+    <h1 class="font-display font-black text-3xl sm:text-5xl lg:text-6xl leading-tight tracking-tight mb-6">
+      渋谷の夜、<span class="text-gradient-gold">500人</span>が熱狂する<br class="hidden sm:block">
+      月1の特別な空間へ。
+    </h1>
+
+    <!-- Sub Catch -->
+    <p class="text-slate-300 text-sm sm:text-lg leading-relaxed max-w-2xl mx-auto mb-12">
+      豪華お笑いライブ × 飲み放題 × 最高の出会い。<br>
+      信頼できる繋がりだけで広がる、<span class="text-gradient-cyan font-bold">都内最大級</span>のエンタメ交流ナイト。
+    </p>
+
+    <!-- Achievement Badges -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+      <div class="group px-5 py-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-gold-500/50 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1">
+        <i class="fa-solid fa-users text-gold-500 text-2xl mb-3 group-hover:scale-110 transition-transform"></i>
+        <p class="font-bold text-white text-sm sm:text-base">毎月200〜500名参加</p>
+        <p class="text-slate-400 text-xs mt-1">圧倒的スケール感</p>
+      </div>
+      <div class="group px-5 py-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-gold-500/50 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1">
+        <i class="fa-solid fa-microphone-lines text-gold-500 text-2xl mb-3 group-hover:scale-110 transition-transform"></i>
+        <p class="font-bold text-white text-sm sm:text-base">賞レース王者・実力派芸人多数</p>
+        <p class="text-slate-400 text-xs mt-1">豪華エンタメ</p>
+      </div>
+      <div class="group px-5 py-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-gold-500/50 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1">
+        <i class="fa-solid fa-champagne-glasses text-gold-500 text-2xl mb-3 group-hover:scale-110 transition-transform"></i>
+        <p class="font-bold text-white text-sm sm:text-base">渋谷・表参道の人気ラウンジ</p>
+        <p class="text-slate-400 text-xs mt-1">上質な空間</p>
+      </div>
+    </div>
+
+    <!-- Caution -->
+    <p class="text-xs sm:text-sm text-slate-500 border-t border-white/10 pt-6 max-w-xl mx-auto">
+      ※本イベントは完全紹介制です。一般募集・当日飛び込み参加は受け付けておりません。
+    </p>
+  </div>
+
+  <!-- scroll cue -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-slate-500 text-xs flex flex-col items-center gap-2 animate-bounce">
+    <span>SCROLL</span>
+    <i class="fa-solid fa-chevron-down"></i>
+  </div>
+</header>
+
+<!-- ========================= 2. CONCEPT ========================= -->
+<section class="relative py-24 sm:py-32 bg-base-900 bg-noise">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <span class="inline-block text-neon-cyan text-xs sm:text-sm font-bold tracking-[0.2em] mb-4">WHY INVITE-ONLY?</span>
+    <h2 class="font-display font-black text-2xl sm:text-4xl leading-snug mb-8">
+      人と人が心地よく繋がる、<br class="sm:hidden">
+      <span class="text-gradient-gold">クリーンで特別な夜</span>を。
+    </h2>
+    <div class="text-slate-300 text-sm sm:text-base leading-loose space-y-5 text-left sm:text-center">
+      <p>「友達100人できるかな?」というシンプルな想いから始まったこのイベントは、今や渋谷で毎月200〜500名が集う大規模イベントへと成長しました。</p>
+      <p>規模が大きくなった今でも私たちが<span class="text-gold-400 font-bold">「完全紹介制」</span>にこだわるのは、参加者全員が心から安心して楽しめる環境を守るため。</p>
+      <p>怪しい勧誘や営業目的の参加は一切お断り。信頼できる友人の繋がりだからこそ生まれる、上質でポジティブな出会いと熱気をお届けします。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= 3. DATA & TRUST ========================= -->
+<section class="relative py-24 bg-base-950">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="inline-block text-gold-500 text-xs sm:text-sm font-bold tracking-[0.2em] mb-3">DATA &amp; TRUST</span>
+      <h2 class="font-display font-black text-2xl sm:text-3xl">数字で見る実績</h2>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      <div class="rounded-2xl p-6 sm:p-8 bg-gradient-to-b from-white/5 to-transparent border border-white/10 text-center hover:border-gold-500/50 hover:shadow-gold-glow transition-all duration-300">
+        <p class="font-display font-black text-3xl sm:text-4xl text-gradient-gold mb-2">200〜500名</p>
+        <p class="text-slate-400 text-xs sm:text-sm">毎月の動員実績<br>(都内最大級)</p>
+      </div>
+      <div class="rounded-2xl p-6 sm:p-8 bg-gradient-to-b from-white/5 to-transparent border border-white/10 text-center hover:border-neon-cyan/50 hover:shadow-cyan-glow transition-all duration-300">
+        <p class="font-display font-black text-3xl sm:text-4xl text-gradient-cyan mb-2">約 50%</p>
+        <p class="text-slate-400 text-xs sm:text-sm">1人参加の割合<br>(1人でも浮かない安心感)</p>
+      </div>
+      <div class="rounded-2xl p-6 sm:p-8 bg-gradient-to-b from-white/5 to-transparent border border-white/10 text-center hover:border-gold-500/50 hover:shadow-gold-glow transition-all duration-300">
+        <p class="font-display font-black text-3xl sm:text-4xl text-gradient-gold mb-2">5 : 5</p>
+        <p class="text-slate-400 text-xs sm:text-sm">男女比<br>(バランスの良いカジュアルな雰囲気)</p>
+      </div>
+      <div class="rounded-2xl p-6 sm:p-8 bg-gradient-to-b from-white/5 to-transparent border border-white/10 text-center hover:border-neon-cyan/50 hover:shadow-cyan-glow transition-all duration-300">
+        <p class="font-display font-black text-3xl sm:text-4xl text-gradient-cyan mb-2">20代〜30代</p>
+        <p class="text-slate-400 text-xs sm:text-sm">主な参加層<br>(同年代の素敵な仲間が見つかる)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= 4. 3 FEATURES ========================= -->
+<section class="relative py-24 bg-base-900 bg-noise">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <span class="inline-block text-gold-500 text-xs sm:text-sm font-bold tracking-[0.2em] mb-3">3 PREMIUM EXPERIENCE</span>
+      <h2 class="font-display font-black text-2xl sm:text-3xl">3つのプレミアム体験</h2>
+    </div>
+
+    <div class="space-y-10">
+      <!-- 01 -->
+      <div class="grid md:grid-cols-2 gap-8 items-center group">
+        <div class="order-2 md:order-1">
+          <span class="font-display font-black text-5xl sm:text-6xl text-gold-500/30">01</span>
+          <h3 class="font-bold text-xl sm:text-2xl mt-2 mb-4 text-white">本格お笑いライブを間近で体感</h3>
+          <p class="text-slate-400 leading-relaxed text-sm sm:text-base">テレビや劇場で活躍するM-1ファイナリストやR-1王者など、豪華ゲスト芸人が毎月登場。お酒を片手に最高のお笑いで会場が一体となります。</p>
+        </div>
+        <div class="order-1 md:order-2 rounded-3xl overflow-hidden border border-white/10 shadow-2xl group-hover:shadow-gold-glow transition-all duration-500">
+          <img src="https://images.unsplash.com/photo-1585699324551-f6c309eedeca?q=80&w=1200&auto=format&fit=crop" alt="お笑いライブのステージとマイクスポットライト" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700">
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div class="grid md:grid-cols-2 gap-8 items-center group">
+        <div class="rounded-3xl overflow-hidden border border-white/10 shadow-2xl group-hover:shadow-cyan-glow transition-all duration-500">
+          <img src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?q=80&w=1200&auto=format&fit=crop" alt="会話が弾む交流パーティーの様子" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700">
+        </div>
+        <div>
+          <span class="font-display font-black text-5xl sm:text-6xl text-neon-cyan/30">02</span>
+          <h3 class="font-bold text-xl sm:text-2xl mt-2 mb-4 text-white">自然と会話が弾むオープンな空気</h3>
+          <p class="text-slate-400 leading-relaxed text-sm sm:text-base">「紹介制」だからこそ、初対面でも壁がなくアットホーム。趣味の友達、飲み仲間、ビジネスで刺激し合える仲間など、一生モノの繋がりが生まれています。</p>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="grid md:grid-cols-2 gap-8 items-center group">
+        <div class="order-2 md:order-1">
+          <span class="font-display font-black text-5xl sm:text-6xl text-gold-500/30">03</span>
+          <h3 class="font-bold text-xl sm:text-2xl mt-2 mb-4 text-white">洗練された空間&amp;コスパの良さ</h3>
+          <p class="text-slate-400 leading-relaxed text-sm sm:text-base">渋谷の上質なパーティースペースを贅沢に貸切。飲み放題&amp;軽食付き・明朗会計(4,000円)で、追加料金の心配なく思い切り楽しめます。</p>
+        </div>
+        <div class="order-1 md:order-2 rounded-3xl overflow-hidden border border-white/10 shadow-2xl group-hover:shadow-gold-glow transition-all duration-500">
+          <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=1200&auto=format&fit=crop" alt="渋谷のラウンジ空間" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= 5. GUEST HISTORY ========================= -->
+<section class="relative py-24 bg-base-950">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="inline-block text-gold-500 text-xs sm:text-sm font-bold tracking-[0.2em] mb-3">GUEST HISTORY</span>
+      <h2 class="font-display font-black text-2xl sm:text-3xl">過去のスペシャルゲスト</h2>
+      <p class="text-slate-500 text-xs sm:text-sm mt-3">※写真はイメージです</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="rounded-2xl overflow-hidden bg-base-900 border border-white/10 hover:border-gold-500/50 hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-gold-glow">
+        <div class="relative h-40 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1520166012956-add9ba0835cb?q=80&w=800&auto=format&fit=crop" alt="お笑いライブのスポットライト" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-base-900 to-transparent"></div>
+          <span class="absolute top-3 right-3 text-[10px] font-bold px-2 py-1 rounded-full bg-gold-500 text-base-950">R-1王者</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-white mb-2">街裏ぴんく</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">2024年 R-1グランプリ王者!独自の世界観で会場を爆笑の渦に。</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden bg-base-900 border border-white/10 hover:border-gold-500/50 hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-gold-glow">
+        <div class="relative h-40 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?q=80&w=800&auto=format&fit=crop" alt="ライブステージの照明" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-base-900 to-transparent"></div>
+          <span class="absolute top-3 right-3 text-[10px] font-bold px-2 py-1 rounded-full bg-neon-cyan text-base-950">TV出演多数</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-white mb-2">超新塾</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">「エンタの神様」「レッドカーペット」等出演。ロックンロールコントで圧倒的熱狂。</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden bg-base-900 border border-white/10 hover:border-gold-500/50 hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-gold-glow">
+        <div class="relative h-40 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1508973379184-7517410fb0bc?q=80&w=800&auto=format&fit=crop" alt="ライブハウスのステージ" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-base-900 to-transparent"></div>
+          <span class="absolute top-3 right-3 text-[10px] font-bold px-2 py-1 rounded-full bg-gold-500 text-base-950">M-1準々決勝</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-white mb-2">きつね日和</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">M-1グランプリ準々決勝進出の実力派コンビ!</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden bg-base-900 border border-white/10 hover:border-gold-500/50 hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-gold-glow">
+        <div class="relative h-40 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1516307365426-bea591f05011?q=80&w=800&auto=format&fit=crop" alt="ステージのマイクとスポットライト" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-base-900 to-transparent"></div>
+          <span class="absolute top-3 right-3 text-[10px] font-bold px-2 py-1 rounded-full bg-neon-cyan text-base-950">モノマネ王者</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-white mb-2">ハギノリザードマン</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">「ザ・細かすぎて伝わらないモノマネ」優勝!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= 6. SCHEDULE & OVERVIEW ========================= -->
+<section class="relative py-24 bg-base-900 bg-noise">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <span class="inline-block text-gold-500 text-xs sm:text-sm font-bold tracking-[0.2em] mb-3">SCHEDULE &amp; INFO</span>
+      <h2 class="font-display font-black text-2xl sm:text-3xl">タイムスケジュール&amp;開催概要</h2>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12">
+      <!-- Timeline -->
+      <div>
+        <h3 class="font-bold text-lg text-white mb-8 flex items-center gap-2">
+          <i class="fa-regular fa-clock text-gold-500"></i> TIME SCHEDULE
+        </h3>
+        <ol class="relative border-l-2 border-gold-500/30 space-y-8 pl-8">
+          <li class="relative">
+            <span class="absolute -left-[38px] top-0 w-4 h-4 rounded-full bg-gold-500 shadow-gold-glow"></span>
+            <p class="font-bold text-gold-400">18:30</p>
+            <p class="text-slate-300 text-sm">オープン・受付スタート</p>
+          </li>
+          <li class="relative">
+            <span class="absolute -left-[38px] top-0 w-4 h-4 rounded-full bg-neon-cyan/70"></span>
+            <p class="font-bold text-gold-400">18:50</p>
+            <p class="text-slate-300 text-sm">乾杯・フリートークタイム</p>
+          </li>
+          <li class="relative">
+            <span class="absolute -left-[38px] top-0 w-4 h-4 rounded-full bg-neon-cyan/70"></span>
+            <p class="font-bold text-gold-400">19:30</p>
+            <p class="text-slate-300 text-sm">スペシャルゲストお笑いライブ</p>
+          </li>
+          <li class="relative">
+            <span class="absolute -left-[38px] top-0 w-4 h-4 rounded-full bg-neon-cyan/70"></span>
+            <p class="font-bold text-gold-400">20:00</p>
+            <p class="text-slate-300 text-sm">交流タイム(連絡先交換など)</p>
+          </li>
+          <li class="relative">
+            <span class="absolute -left-[38px] top-0 w-4 h-4 rounded-full bg-neon-cyan/70"></span>
+            <p class="font-bold text-gold-400">20:30</p>
+            <p class="text-slate-300 text-sm">締め・記念撮影</p>
+          </li>
+          <li class="relative">
+            <span class="absolute -left-[38px] top-0 w-4 h-4 rounded-full bg-gold-500 shadow-gold-glow"></span>
+            <p class="font-bold text-gold-400">20:40</p>
+            <p class="text-slate-300 text-sm">イベント終了(21:00完全撤収)</p>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Overview -->
+      <div>
+        <h3 class="font-bold text-lg text-white mb-8 flex items-center gap-2">
+          <i class="fa-solid fa-circle-info text-neon-cyan"></i> EVENT INFO
+        </h3>
+        <div class="rounded-2xl bg-white/5 border border-white/10 divide-y divide-white/10 overflow-hidden">
+          <div class="p-6 flex items-start gap-4">
+            <i class="fa-solid fa-coins text-gold-500 text-xl mt-1 w-6 text-center"></i>
+            <div>
+              <p class="text-slate-400 text-xs mb-1">参加費</p>
+              <p class="font-bold text-white">4,000円<span class="text-slate-400 font-normal text-sm">(飲み放題+軽食付き / 当日現地払い)</span></p>
+            </div>
+          </div>
+          <div class="p-6 flex items-start gap-4">
+            <i class="fa-solid fa-location-dot text-gold-500 text-xl mt-1 w-6 text-center"></i>
+            <div>
+              <p class="text-slate-400 text-xs mb-1">会場</p>
+              <p class="font-bold text-white">Glade Park 渋谷<span class="text-slate-400 font-normal text-sm">(または表参道)</span></p>
+            </div>
+          </div>
+          <div class="p-6 flex items-start gap-4">
+            <i class="fa-solid fa-shirt text-gold-500 text-xl mt-1 w-6 text-center"></i>
+            <div>
+              <p class="text-slate-400 text-xs mb-1">ドレスコード</p>
+              <p class="font-bold text-white">カジュアルでOK<span class="text-slate-400 font-normal text-sm">(清潔感のある服装でお越しください)</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 rounded-2xl overflow-hidden border border-white/10">
+          <img src="https://images.unsplash.com/photo-1554797589-7241bb691973?q=80&w=1200&auto=format&fit=crop" alt="渋谷の夜の街並み" class="w-full h-48 object-cover">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= 7. FAQ ========================= -->
+<section class="relative py-24 bg-base-950">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="inline-block text-gold-500 text-xs sm:text-sm font-bold tracking-[0.2em] mb-3">FAQ</span>
+      <h2 class="font-display font-black text-2xl sm:text-3xl">よくある質問</h2>
+    </div>
+
+    <div class="space-y-4">
+      <div class="accordion-item rounded-2xl bg-white/5 border border-white/10 overflow-hidden">
+        <button type="button" onclick="toggleAccordion(this)" class="accordion-toggle w-full flex items-center justify-between gap-4 p-5 sm:p-6 text-left">
+          <span class="font-bold text-white text-sm sm:text-base"><span class="text-gold-500 mr-2">Q.</span>1人参加でも大丈夫ですか?</span>
+          <i class="fa-solid fa-plus accordion-icon text-gold-500 flex-shrink-0"></i>
+        </button>
+        <div class="accordion-content px-5 sm:px-6">
+          <p class="text-slate-400 text-sm leading-relaxed pb-6 border-t border-white/10 pt-4">
+            <span class="text-neon-cyan font-bold mr-1">A.</span>はい、大歓迎です!毎回約半数の方がお1人で参加されています。スタッフや周りの参加者とも自然と打ち解けられる空気作りを徹底しています。
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item rounded-2xl bg-white/5 border border-white/10 overflow-hidden">
+        <button type="button" onclick="toggleAccordion(this)" class="accordion-toggle w-full flex items-center justify-between gap-4 p-5 sm:p-6 text-left">
+          <span class="font-bold text-white text-sm sm:text-base"><span class="text-gold-500 mr-2">Q.</span>どんな人が参加していますか?</span>
+          <i class="fa-solid fa-plus accordion-icon text-gold-500 flex-shrink-0"></i>
+        </button>
+        <div class="accordion-content px-5 sm:px-6">
+          <p class="text-slate-400 text-sm leading-relaxed pb-6 border-t border-white/10 pt-4">
+            <span class="text-neon-cyan font-bold mr-1">A.</span>20代〜30代の会社員、経営者、クリエイター、フリーランスなど様々です。「純粋に友達を作りたい」「楽しい休日を過ごしたい」という方が集まっています。
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item rounded-2xl bg-white/5 border border-white/10 overflow-hidden">
+        <button type="button" onclick="toggleAccordion(this)" class="accordion-toggle w-full flex items-center justify-between gap-4 p-5 sm:p-6 text-left">
+          <span class="font-bold text-white text-sm sm:text-base"><span class="text-gold-500 mr-2">Q.</span>ビジネス勧誘や強引なアプローチが心配です</span>
+          <i class="fa-solid fa-plus accordion-icon text-gold-500 flex-shrink-0"></i>
+        </button>
+        <div class="accordion-content px-5 sm:px-6">
+          <p class="text-slate-400 text-sm leading-relaxed pb-6 border-t border-white/10 pt-4">
+            <span class="text-neon-cyan font-bold mr-1">A.</span>マルチ商法、宗教、保険・金融商品等の営業勧誘行為、他人が不快に感じる迷惑行為は固く禁止しております。見つけ次第ご退場いただくなど、徹底した安全管理を行っています。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= 8. CLOSING / CTA ========================= -->
+<section class="relative py-24 sm:py-32 bg-base-900 overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=2000&auto=format&fit=crop" alt="乾杯するパーティーの様子" class="w-full h-full object-cover opacity-20">
+    <div class="absolute inset-0 bg-gradient-to-b from-base-900 via-base-900/90 to-base-950"></div>
+  </div>
+
+  <div class="relative z-10 max-w-3xl mx-auto px-6 text-center">
+    <div class="rounded-3xl bg-white/5 border border-gold-500/30 backdrop-blur-sm p-8 sm:p-14 shadow-gold-glow">
+      <i class="fa-solid fa-champagne-glasses text-gold-500 text-3xl mb-6"></i>
+      <h2 class="font-display font-black text-xl sm:text-3xl leading-snug mb-6">
+        完全紹介制のため、<span class="text-gradient-gold">一般募集は行っておりません</span>
+      </h2>
+      <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-10">
+        参加をご希望の方は、このページをシェアしてくれたご友人・幹事まで直接「参加したい!」とご連絡ください。専用の受付チケット案内をお送りいたします。
+      </p>
+      <button onclick="openCtaModal()" class="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-gold-500 to-gold-600 text-base-950 font-bold text-sm sm:text-base shadow-gold-glow hover:shadow-none hover:scale-105 active:scale-95 transition-all duration-300">
+        <i class="fa-brands fa-line text-lg"></i>
+        幹事・紹介者に「参加したい」と連絡する
+        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= FOOTER ========================= -->
+<footer class="py-10 bg-base-950 border-t border-white/10 text-center">
+  <p class="text-slate-500 text-xs">
+    ※本イベントは完全紹介制です。一般募集・当日飛び込み参加は受け付けておりません。<br>
+    &copy; 2026 SHIBUYA INVITE NIGHT. All Rights Reserved.
+  </p>
+</footer>
+
+<!-- ========================= CTA MODAL ========================= -->
+<div id="cta-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-6 bg-black/70 backdrop-blur-sm opacity-0">
+  <div class="relative max-w-sm w-full rounded-3xl bg-base-900 border border-gold-500/40 shadow-gold-glow p-8 text-center fade-in-up">
+    <button onclick="closeCtaModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
+      <i class="fa-solid fa-xmark text-xl"></i>
+    </button>
+    <i class="fa-brands fa-line text-neon-cyan text-4xl mb-4"></i>
+    <h3 class="font-bold text-white text-lg mb-3">紹介者へ直接ご連絡ください</h3>
+    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+      本イベントへの参加受付は行っておりません。<br>
+      このページをシェアしてくれたご友人・幹事へ、LINEやDMで直接「参加したい!」とご連絡ください。
+    </p>
+    <button onclick="closeCtaModal()" class="w-full py-3 rounded-full bg-gold-500 text-base-950 font-bold hover:bg-gold-400 transition-colors">
+      閉じる
+    </button>
+  </div>
+</div>
+
+<script>
+  function toggleAccordion(btn) {
+    const item = btn.closest('.accordion-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.accordion-item.open').forEach(el => {
+      if (el !== item) el.classList.remove('open');
+    });
+    item.classList.toggle('open', !isOpen);
+  }
+
+  function openCtaModal() {
+    const modal = document.getElementById('cta-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    requestAnimationFrame(() => { modal.style.opacity = '1'; });
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeCtaModal() {
+    const modal = document.getElementById('cta-modal');
+    modal.style.opacity = '0';
+    document.body.style.overflow = '';
+    setTimeout(() => {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }, 250);
+  }
+
+  document.getElementById('cta-modal').addEventListener('click', (e) => {
+    if (e.target.id === 'cta-modal') closeCtaModal();
+  });
+</script>
+
+</body>
+</html>
